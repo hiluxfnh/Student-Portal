@@ -4,15 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="REGISTER HERE"
+       android:textSize="25dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="30sp"
+       />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="20sp"
+        android:inputType="text"
+        android:id="@+id/name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="20sp"
+        android:inputType="text"
+        android:id="@+id/address"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Contact"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="20sp"
+        android:inputType="phone"
+        android:id="@+id/contact"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="20sp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="20sp"
+        android:inputType="textPassword"
+        android:id="@+id/pass"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comfirm Password"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="20sp"
+        android:inputType="textPassword"
+        android:id="@+id/cpass"
+        />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Register"
+        android:layout_gravity="center"
+        android:layout_margin="15sp"
+        android:id="@+id/reg_btn"
+        />
 
 </LinearLayout>
